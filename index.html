@@ -108,6 +108,9 @@
             line-height: 1.6;
             overflow-x: hidden;
             animation: fadeIn 1s ease-out;
+            /* Prevent mobile scrolling issues during animations */
+            touch-action: manipulation;
+            -webkit-overflow-scrolling: touch;
         }
         
         /* Animations */
@@ -457,6 +460,7 @@
             color: #64748b;
             margin-bottom: 20px;
             line-height: 1.8;
+            font-size: 16px;
         }
         
         .about-stats {
@@ -914,6 +918,20 @@
             .hero-container {
                 padding: 0 20px;
             }
+            
+            /* Mobile Contact Form - Single Column */
+            #contactForm {
+                display: block !important;
+                gap: 0 !important;
+            }
+            
+            #contactForm > div {
+                margin-bottom: 0;
+            }
+            
+            .form-group textarea {
+                height: 120px !important;
+            }
         }
         
         @media (max-width: 480px) {
@@ -1060,7 +1078,7 @@
                         </svg>
                     </div>
                     <h3 class="skill-title">JavaScript & Frontend</h3>
-                    <p class="skill-description">Creating dynamic web applications with modern JavaScript, React, Vue.js, and responsive frontend technologies.</p>
+                    <p class="skill-description">Creating dynamic web applications with modern JavaScript and React, with primary focus on backend development and API integration.</p>
                 </div>
                 
                 
@@ -1083,7 +1101,7 @@
                         </svg>
                     </div>
                     <h3 class="skill-title">Database Management</h3>
-                    <p class="skill-description">Designing and optimizing databases using MySQL, PostgreSQL, MongoDB, and implementing efficient data structures and queries.</p>
+                    <p class="skill-description">Designing and optimizing databases with primary focus on MySQL, implementing efficient data structures and queries for web applications.</p>
                 </div>
                
                 
@@ -1092,7 +1110,7 @@
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
                     </div>
                     <h3 class="skill-title">HTML & CSS</h3>
-                    <p class="skill-description">Building responsive and accessible web interfaces with semantic HTML5, modern CSS3, Flexbox, Grid, and CSS frameworks like Bootstrap and Tailwind.</p>
+                    <p class="skill-description">Building responsive and accessible web interfaces with semantic HTML5, modern CSS3, and Bootstrap framework for creating modern web applications.</p>
                 </div>
                 
                 
@@ -1108,7 +1126,7 @@
                         </svg>
                     </div>
                     <h3 class="skill-title">IT Support & Infrastructure</h3>
-                    <p class="skill-description">Managing network systems, providing technical support, troubleshooting IT issues, and maintaining infrastructure for optimal business operations.</p>
+                    <p class="skill-description">Providing technical support for Windows systems, basic network troubleshooting, and general IT assistance for business operations.</p>
                 </div>
                 
                 <div class="skill-card">
@@ -1136,7 +1154,7 @@
                         </svg>
                     </div>
                     <h3 class="skill-title">Linux & Server Administration</h3>
-                    <p class="skill-description">Expert in Linux system administration, server configuration, Nginx web server setup, and system optimization for production environments.</p>
+                    <p class="skill-description">Linux system administration, server configuration, Nginx web server setup, and system optimization for production environments.</p>
                 </div>
                 
         
